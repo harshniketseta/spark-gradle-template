@@ -83,7 +83,7 @@ object Main extends InitSpark {
 Just import it into your favorite IDE as a gradle project. Tested with IntelliJ to work. Or use your favorite editor and build from command line with gradle.
 
 ## Libraries Included
-- Spark - 2.1.0
+- Spark - 2.2.4
 
 ## Useful Links
 - [Spark Docs - Root Page](http://spark.apache.org/docs/latest/)
