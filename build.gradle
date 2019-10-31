@@ -50,23 +50,17 @@ task run(type: JavaExec, dependsOn: classes) {
     classpath configurations.runtime
 }
 
-//jar {
-//    classifier = 'all'
-//    manifest {
-//        attributes 'Implementation-Title': title,
-//                'Implementation-Version': version,
-//                'Main-Class': mainClassFile
-//    }
-//    include{sourceSets.main.output.classesDir}
-//    zip64 true
-//}
+jar {
+    manifest {
+        attributes 'Implementation-Title': title,
+                'Implementation-Version': version,
+                'Main-Class': mainClassFile
+    }
+    zip64 true
+}
 
 shadowJar {
-    classifier = 'shadow'
-    append 'reference.conf'
-    dependencies {
-
-    }
+    zip64 true
 }
 
 test {
