@@ -26,5 +26,6 @@ object QueryRaceData {
       F1Reader.read(s"${dataPath}/drivers.csv"),
       F1Reader.read(s"${dataPath}/results.csv")
     )
+
   }
 }

@@ -30,8 +30,8 @@ class QueryRaceDataSpec extends FlatSpec with Matchers with BeforeAndAfterAll wi
     nationalityRaceData.results.columns shouldBe Array("resultId", "raceId", "driverId", "constructorId", "number", "grid", "position", "positionText", "positionOrder", "points", "laps", "time", "milliseconds", "fastestLap", "rank", "fastestLapTime", "fastestLapSpeed", "statusId")
     nationalityRaceData.results.count shouldBe 23777
 
-    nationalityRaceData.countRaceByNationality().columns shouldBe Array("driverId", "driverRef", "number", "code", "forename", "surname", "dob", "nationality", "url", "resultId", "raceId", "constructorId", "number", "grid", "position", "positionText", "positionOrder", "points", "laps", "time", "milliseconds", "fastestLap", "rank", "fastestLapTime", "fastestLapSpeed", "statusId")
-    nationalityRaceData.countRaceByNationality().count shouldBe 23777
+    nationalityRaceData.countRaceByNationality().columns shouldBe Array("nationality", "racesParticipated")
+    nationalityRaceData.countRaceByNationality().count shouldBe 41
   }
 
 
