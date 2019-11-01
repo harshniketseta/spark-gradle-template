@@ -13,15 +13,6 @@ trait InitSpark {
   val sc = spark.sparkContext
   val sqlContext = spark.sqlContext
 
-  //Optional
-  def reader = spark.read
-               .option("header",true)
-               .option("inferSchema", true)
-               .option("mode", "DROPMALFORMED")
-  def readerWithoutHeader = spark.read
-                            .option("header",true)
-                            .option("inferSchema", true)
-                            .option("mode", "DROPMALFORMED")
   private def init = {
     sc.setLogLevel("ERROR")
     Logger.getLogger("org").setLevel(Level.ERROR)

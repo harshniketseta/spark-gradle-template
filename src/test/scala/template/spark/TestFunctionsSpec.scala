@@ -16,9 +16,9 @@ class TestFunctionsSpec extends FlatSpec with Matchers with BeforeAndAfterAll wi
     TestFunctions.addNaturalNumbers(100) shouldEqual 5050
   }
 
-  override def afterAll(): Unit = {
-    close
-  }
+//  override def afterAll(): Unit = {
+//    close
+//  }
 
 //  FunSuite
 //  test("return the correct result"){
