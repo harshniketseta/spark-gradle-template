@@ -32,6 +32,10 @@ class QueryRaceDataSpec extends FlatSpec with Matchers with BeforeAndAfterAll wi
 
     nationalityRaceData.countRaceByNationality().columns shouldBe Array("nationality", "racesParticipated")
     nationalityRaceData.countRaceByNationality().count shouldBe 41
+
+    nationalityRaceData.countRacesWonByNationality().columns shouldBe Array("nationality", "Races Won")
+    nationalityRaceData.countRacesWonByNationality().count shouldBe 22
+
   }
 
 
